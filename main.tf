@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "azurerm_firewall_policy_rule_collection_group" "fwrcg_hub" {
-  name               = format("%s%s%s%s", "fwrcg_hub_", var.prjname, var.enviro, var.prjnum)
+  name               = format("%s%s%s%s", "fwrcg_hub_", var.orgname, var.enviro, var.prjnum)
   firewall_policy_id = var.fwp_hub_id
   priority           = 100
 
