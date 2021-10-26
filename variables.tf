@@ -2,6 +2,12 @@ variable "enviro" {
   type        = string
   description = "define the environment ex. dev,tst,prd,stg"
 }
+
+variable "orgname" {
+  type        = string
+  description = "define the orgname - ex. Acme"
+}
+
 variable "prjnum" {
   type        = string
   description = "define the project number for TFstate file ex. 4858"
